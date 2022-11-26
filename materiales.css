@@ -1,0 +1,97 @@
+body{
+    background: linear-gradient(rgb(105, 184, 184),rgb(29, 88, 143));
+    margin: 0px;
+}
+h1,h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+.carousel-caption>h2{
+    background-color: rgba(0, 0, 0, 0.466);
+}
+.pe{
+    background-color: rgba(0, 0, 0, 0.466);
+}
+header{
+    background: linear-gradient(rgb(214, 214, 214),rgb(54, 54, 202));
+}
+header>nav{
+    background-color: rgb(23, 104, 151);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header>nav>img{
+    width: 35px;
+    height: 35px;
+    background-color: rgba(85, 85, 83, 0.432);
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+header>nav>a{
+    color: azure;
+    margin-top: 1px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 15%;
+}
+header>nav>a:hover{
+    background-color: rgb(48, 85, 187);
+    color: black;
+}
+
+
+@media (max-width: 1023px){
+    .info{
+        flex: 1 1 50%;
+    } 
+ }
+ /*Celulares*/
+ @media (max-width: 767px){
+     aside, main{
+         flex: 1 1 100%;
+     }
+     section{
+         flex-flow: column;
+     }
+     .info{
+        flex: 1 1 100%; 
+     }
+ }
+ footer{
+    background-color: #6aa4d3;
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+}
+.info{
+    flex: 1 1 25%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.imagen{
+    width: 40px;
+    height: 40px;
+    background-color: #1d48d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;   
+}
+.imagen > img{
+    width: 25px;
+    height: 25px;
+}
+.texto > p{
+    margin: 0px;
+}
+.social img{
+    height: 20px;
+}
